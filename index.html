@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResetBuddy - Your Mental Wellness Companion</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between;">
+      <div class="logo">
+        <img src="Logo.png" alt="ResetBuddy Logo">
+        ResetBuddy
+      </div>
+      <div class="nav-toggle">☰</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="hero">
+      <img id="hero-img-full" src="Hero image.png" alt="ResetBuddy Hero">
+      <div class="container hero-content">
+        <h1>Meet ResetBuddy</h1>
+        <p class="slogan">Press Pause, Feel Better</p>
+        <p>Your AI-powered companion for mental wellness, anytime, anywhere.</p>
+        <button class="btn" onclick="window.location.href='https://reset-buddy-tool.lovable.app/'">Get Started with a Free Assessment Tool</button>
+      </div>
+    </section>
+
+    <section id="features" class="container">
+      <h2 style="text-align:center; margin-bottom:40px;">Key Features</h2>
+      <div class="carousel-container">
+        <div id="carousel-feature-cards">
+          <div class="carousel-feature-card" style="display:block;">
+            <img src="https://plus.unsplash.com/premium_photo-1665990294269-f1d6c35ab9d1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGhlcmFweXxlbnwwfHwwfHx8MA%3D%3D" alt="24/7 chat support">
+            <h3>24/7 Chat Support</h3><p>Talk to our AI companion anytime you need a listening ear.</p>
+          </div>
+          <div class="carousel-feature-card" style="display:none;">
+            <img src="https://plus.unsplash.com/premium_photo-1664378616928-dc6842677183?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGhlcmFweXxlbnwwfHwwfHx8MA%3D%3D" alt="Personalized plans">
+            <h3>Personalized Plans</h3><p>Get customized exercises and tips based on your mood and history.</p>
+          </div>
+          <div class="carousel-feature-card" style="display:none;">
+            <img src="https://plus.unsplash.com/premium_photo-1664378616928-dc6842677183?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGhlcmFweXxlbnwwfHwwfHx8MA%3D%3D" alt="Anonymous & secure">
+            <h3>Anonymous & Secure</h3><p>Your privacy is our priority. Chat anonymously with full encryption.</p>
+          </div>
+          <div class="carousel-feature-card" style="display:none;">
+            <img src="https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRoZXJhcHl8ZW58MHx8MHx8fDA%3D" alt="Local resources">
+            <h3>Local Resources</h3><p>Access curated mental health resources and helplines in your area.</p>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Previous feature">&#8592;</button>
+          <button class="carousel-btn" id="carousel-next" aria-label="Next feature">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="container">
+      <h2 style="text-align:center; margin-bottom:40px;">How It Works</h2>
+      <div class="steps">
+        <div class="step"><h4>1. Sign Up</h4><p>Create your free account in under a minute.</p></div>
+        <div class="step"><h4>2. Share Your Feelings</h4><p>Tell ResetBuddy how you're feeling today.</p></div>
+        <div class="step"><h4>3. Receive Guidance</h4><p>Get real-time, evidence-based exercises and advice.</p></div>
+        <div class="step"><h4>4. Track Progress</h4><p>Monitor your mood and growth over time.</p></div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container">
+      <h2 style="text-align:center; margin-bottom:40px;">Testimonials</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial"><p>"ResetBuddy has been my constant support. I love having a safe space to share."</p><h5>- Alex, 27</h5></div>
+        <div class="testimonial"><p>"The personalized plans really helped me manage my anxiety!"</p><h5>- Priya, 34</h5></div>
+        <div class="testimonial"><p>"I appreciate the anonymity and privacy. Makes opening up easier."</p><h5>- Zhao, 42</h5></div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2 style="text-align:center; margin-bottom:40px;">Get in Touch</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ResetBuddy. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+    document.querySelector('.nav-toggle').addEventListener('click', ()=>{
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+    document.getElementById('contactForm')?.addEventListener('submit', e=>{
+      e.preventDefault(); alert('Thank you for reaching out!'); e.target.reset();
+    });
+    // Carousel logic
+    (function() {
+      const cards = document.querySelectorAll('.carousel-feature-card');
+      let current = 0;
+      function showCard(idx) {
+        cards.forEach((card, i) => card.style.display = i === idx ? 'block' : 'none');
+      }
+      document.getElementById('carousel-prev').addEventListener('click', function() {
+        current = (current - 1 + cards.length) % cards.length;
+        showCard(current);
+      });
+      document.getElementById('carousel-next').addEventListener('click', function() {
+        current = (current + 1) % cards.length;
+        showCard(current);
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* ResetBuddy Main Styles */
+:root {
+  --gradient-start: #E0F7FF;
+  --gradient-end:   #B3E5FC;
+  --primary-color:  #4FB3E8;
+  --accent-color:   #2A8DB0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--accent-color);
+  background: linear-gradient(180deg, var(--gradient-start), var(--gradient-end));
+}
+a { color: var(--accent-color); text-decoration: none; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+
+.container { width: 90%; max-width: 1200px; margin: auto; }
+section { padding: 60px 0; }
+
+header {
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  border-bottom: 1px solid rgba(42,141,176,0.3);
+}
+.logo { display: flex; align-items: center; gap: 10px; padding: 15px 0;
+  font-size: 1.5rem; font-weight: bold; color: var(--primary-color);
+}
+.logo img { height: 40px; width: auto; }
+nav { display: flex; justify-content: flex-end; align-items: center; }
+.nav-links { display: flex; gap: 20px; }
+.nav-toggle { display: none; cursor: pointer; font-size: 1.2rem; }
+.nav-links a:hover { color: var(--accent-color); }
+
+/* Hero */
+#hero { margin-top: 40px; text-align: center; padding: 0 0 100px 0; position: relative; }
+#hero-img-full {
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  display: block;
+  margin: 0 calc(-50vw + 50%);
+  border-radius: 0;
+  box-shadow: none;
+  position: relative;
+  top: 0;
+}
+#hero .container.hero-content { padding-top: 40px; }
+#hero h1 { font-size: 3rem; margin-bottom: 10px; color: var(--accent-color); }
+#hero .slogan { font-size: 1.4rem; margin-bottom: 15px;
+  color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px;
+}
+#hero p { font-size: 1.1rem; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto; }
+.btn { padding: 14px 40px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  color: #fff; font-weight: bold; border: none; border-radius: 4px;
+  cursor: pointer; transition: opacity 0.3s;
+}
+.btn:hover { opacity: 0.8; }
+
+/* Features Carousel */
+#features .carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 350px;
+}
+.carousel-feature-card {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 20px auto;
+  transition: opacity 0.3s;
+}
+.carousel-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.carousel-btn {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.carousel-btn:hover { background: var(--accent-color); }
+
+/* How It Works */
+#how-it-works .steps { display: flex; flex-wrap: wrap; gap: 40px; }
+.step { flex: 1; min-width: 200px; }
+.step h4 { margin-bottom: 10px; color: var(--accent-color); }
+
+/* Testimonials */
+#testimonials .testimonial-grid { display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;
+}
+.testimonial { background: rgba(255,255,255,0.6);
+  padding: 20px; border-radius: 8px; border-left: 4px solid var(--primary-color);
+}
+.testimonial p { font-style: italic; margin-bottom: 10px; }
+.testimonial h5 { text-align: right; font-weight: bold; }
+
+/* Contact */
+#contact { background: rgba(255,255,255,0.5); }
+#contact form { max-width: 600px; margin: auto; display: grid; gap: 20px; }
+#contact input, #contact textarea { padding: 12px;
+  border: 1px solid rgba(42,141,176,0.5); border-radius: 4px;
+  font-family: inherit;
+}
+#contact button { font-family: inherit; padding: 12px; background: var(--accent-color);
+  color: #fff; border: none; border-radius: 4px; cursor: pointer;
+}
+#contact button:hover { opacity: 0.9; }
+
+footer {
+  text-align: center; padding: 20px 0;
+  background: linear-gradient(90deg, var(--gradient-end), var(--gradient-start));
+  color: rgba(42,141,176,0.8);
+}
+
+@media (max-width: 768px) {
+  .nav-toggle { display: block; }
+  .nav-links { display: none; flex-direction: column;
+    background: rgba(255,255,255,0.9); position: absolute; top: 60px; right: 0;
+    width: 200px; border: 1px solid rgba(42,141,176,0.3);
+  }
+  .nav-links.active { display: flex; }
+}
